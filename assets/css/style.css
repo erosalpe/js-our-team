@@ -1,0 +1,13 @@
+.grigliaCarte{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    --gap: 1rem;
+    --columns: 6;
+    flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+    background-color: brown;
+    aspect-ratio: 1;
+}
